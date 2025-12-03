@@ -84,15 +84,7 @@ const Footer = () => {
           </Col>
 
           <Col md={3} sm={6} xs={12} className="mb-4">
-            <h5>Connect with Us</h5>
-            <div className="d-flex">
-                <i className="bi bi-facebook"style={{ fontSize: '24px'}} className="me-3></i>
-              </a>
-                <i className="bi bi-twitter"style={{ fontSize: '24px'}} className="me-3">></i>
-              </a>
-                <i className="bi bi-instagram"style={{ fontSize: '24px'}}>></i>
-              </a>
-            </div>
+            <h5>Hii I am Aryan</h5>
           </Col>
         </Row>
         <hr style={{ borderColor: "white" }} />
