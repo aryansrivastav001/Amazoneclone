@@ -86,14 +86,11 @@ const Footer = () => {
           <Col md={3} sm={6} xs={12} className="mb-4">
             <h5>Connect with Us</h5>
             <div className="d-flex">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" style={{ fontSize: '24px'}} className="me-3">
-                <i className="bi bi-facebook"></i>
+                <i className="bi bi-facebook"style={{ fontSize: '24px'}} className="me-3></i>
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" style={{ fontSize: '24px'}} className="me-3">
-                <i className="bi bi-twitter"></i>
+                <i className="bi bi-twitter"style={{ fontSize: '24px'}} className="me-3">></i>
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" style={{ fontSize: '24px'}}>
-                <i className="bi bi-instagram"></i>
+                <i className="bi bi-instagram"style={{ fontSize: '24px'}}>></i>
               </a>
             </div>
           </Col>
