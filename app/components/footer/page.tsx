@@ -4,14 +4,14 @@ import { Container, Row, Col } from "react-bootstrap";
 import Link from "next/link";
 
 const Footer = () => {
-  const linkStyle = {{
+  const linkStyle = {
     color: "white",
     textDecoration: "none",
-  }};
+  };
 
-  const hoverStyle = {{
+  const hoverStyle = {
     textDecoration: "underline",
-  }};
+  };
 
   return (
     <footer
