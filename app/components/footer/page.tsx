@@ -1,83 +1,112 @@
-import React from "react";
+"use client";
+
 import { Container, Row, Col } from "react-bootstrap";
 import Link from "next/link";
 
-// Inline styles for the footer
-const footerStyle = {
-  backgroundColor: "#232f3e", // Dark blue, similar to Amazon
-  color: "white",
-  paddingTop: "40px",
-};
+const Footer = () => {
+  const linkStyle = {
+    color: "white",
+    textDecoration: "none",
+  };
 
-const footerLinkStyle = {
-  color: "#DDD",
-  textDecoration: "none",
-  display: "block",
-  marginBottom: "10px",
-  fontSize: "14px",
-};
+  const hoverStyle = {
+    textDecoration: "underline",
+  };
 
-const footerTitleStyle = {
-  fontWeight: "bold",
-  marginBottom: "15px",
-  fontSize: "16px",
-};
-
-const copyrightSectionStyle = {
-  backgroundColor: "#131A22", // Even darker blue for the bottom bar
-  padding: "20px 0",
-  marginTop: "30px",
-  textAlign: "center",
-  fontSize: "14px",
-  color: "#DDD",
-};
-
-export default function Footer() {
   return (
-    <div style={footerStyle}>
+    <footer
+      style={{ backgroundColor: "#232f3e", color: "white" }}
+      className="pt-5 pb-4"
+    >
       <Container>
         <Row>
-          {/* Column 1: Get to Know Us */}
           <Col md={3} sm={6} xs={12} className="mb-4">
-            <h5 style={footerTitleStyle}>Get to Know Us</h5>
-            <Link href="/about" style={footerLinkStyle}>About Us</Link>
-            <Link href="/careers" style={footerLinkStyle}>Careers</Link>
-            <Link href="/press" style={footerLinkStyle}>Press Releases</Link>
-            <Link href="/science" style={footerLinkStyle}>Flipcart Science</Link>
+            <h5>Get to Know Us</h5>
+            <ul className="list-unstyled">
+              <li>
+                <Link href="/about" style={linkStyle}>
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link href="/careers" style={linkStyle}>
+                  Careers
+                </Link>
+              </li>
+              <li>
+                <Link href="/press" style={linkStyle}>
+                  Press Releases
+                </Link>
+              </li>
+            </ul>
           </Col>
 
-          {/* Column 2: Connect with Us */}
           <Col md={3} sm={6} xs={12} className="mb-4">
-            <h5 style={footerTitleStyle}>Connect with Us</h5>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" style={footerLinkStyle}>Facebook</a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" style={footerLinkStyle}>Twitter</a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" style={footerLinkStyle}>Instagram</a>
+            <h5>Make Money with Us</h5>
+            <ul className="list-unstyled">
+              <li>
+                <Link href="/sell" style={linkStyle}>
+                  Sell on FlipCart
+                </Link>
+              </li>
+              <li>
+                <Link href="/affiliate" style={linkStyle}>
+                  Become an Affiliate
+                </Link>
+              </li>
+              <li>
+                <Link href="/advertise" style={linkStyle}>
+                  Advertise Your Products
+                </Link>
+              </li>
+            </ul>
           </Col>
 
-          {/* Column 3: Make Money with Us */}
           <Col md={3} sm={6} xs={12} className="mb-4">
-            <h5 style={footerTitleStyle}>Make Money with Us</h5>
-            <Link href="/sell" style={footerLinkStyle}>Sell on Flipcart</Link>
-            <Link href="/affiliate" style={footerLinkStyle}>Become an Affiliate</Link>
-            <Link href="/advertise" style={footerLinkStyle}>Advertise Your Products</Link>
-            <Link href="/sell-on-flipcart" style={footerLinkStyle}>Sell under Flipcart Accelerator</Link>
+            <h5>Let Us Help You</h5>
+            <ul className="list-unstyled">
+              <li>
+                <Link href="/account" style={linkStyle}>
+                  Your Account
+                </Link>
+              </li>
+              <li>
+                <Link href="/orders" style={linkStyle}>
+                  Your Orders
+                </Link>
+              </li>
+              <li>
+                <Link href="/help" style={linkStyle}>
+                  Help
+                </Link>
+              </li>
+            </ul>
           </Col>
 
-          {/* Column 4: Let Us Help You */}
           <Col md={3} sm={6} xs={12} className="mb-4">
-            <h5 style={footerTitleStyle}>Let Us Help You</h5>
-            <Link href="/account" style={footerLinkStyle}>Your Account</Link>
-            <Link href="/returns" style={footerLinkStyle}>Returns Centre</Link>
-            <Link href="/help" style={footerLinkStyle}>100% Purchase Protection</Link>
-            <Link href="/help" style={footerLinkStyle}>Help</Link>
+            <h5>Connect with Us</h5>
+            <div className="d-flex">
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" style={{...linkStyle, fontSize: '24px'}} className="me-3">
+                <i className="bi bi-facebook"></i>
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" style={{...linkStyle, fontSize: '24px'}} className="me-3">
+                <i className="bi bi-twitter"></i>
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" style={{...linkStyle, fontSize: '24px'}}>
+                <i className="bi bi-instagram"></i>
+              </a>
+            </div>
+          </Col>
+        </Row>
+        <hr style={{ borderColor: "white" }} />
+        <Row className="text-center mt-3">
+          <Col>
+            <p>&copy; {new Date().getFullYear()} Aryan Srivastav. All Rights Reserved.</p>
           </Col>
         </Row>
       </Container>
-
-      {/* Copyright Section */}
-      <div style={copyrightSectionStyle}>
-        © 2025, Aryan Srivastav
-      </div>
-    </div>
+    </footer>
   );
-}
+};
+
+export default Footer;
