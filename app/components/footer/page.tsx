@@ -24,17 +24,17 @@ const Footer = () => {
             <h5>Get to Know Us</h5>
             <ul className="list-unstyled">
               <li>
-                <Link href="/about" style={linkStyle}>
+                <Link href="/about" style={{linkStyle}}>
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/careers" style={linkStyle}>
+                <Link href="/careers" style={{linkStyle}}>
                   Careers
                 </Link>
               </li>
               <li>
-                <Link href="/press" style={linkStyle}>
+                <Link href="/press" style={{linkStyle}}>
                   Press Releases
                 </Link>
               </li>
@@ -45,17 +45,17 @@ const Footer = () => {
             <h5>Make Money with Us</h5>
             <ul className="list-unstyled">
               <li>
-                <Link href="/sell" style={linkStyle}>
+                <Link href="/sell" style={{linkStyle}}>
                   Sell on FlipCart
                 </Link>
               </li>
               <li>
-                <Link href="/affiliate" style={linkStyle}>
+                <Link href="/affiliate" style={{linkStyle}}>
                   Become an Affiliate
                 </Link>
               </li>
               <li>
-                <Link href="/advertise" style={linkStyle}>
+                <Link href="/advertise" style={{linkStyle}}>
                   Advertise Your Products
                 </Link>
               </li>
@@ -66,17 +66,17 @@ const Footer = () => {
             <h5>Let Us Help You</h5>
             <ul className="list-unstyled">
               <li>
-                <Link href="/account" style={linkStyle}>
+                <Link href="/account" style={{linkStyle}}>
                   Your Account
                 </Link>
               </li>
               <li>
-                <Link href="/orders" style={linkStyle}>
+                <Link href="/orders" style={{linkStyle}}>
                   Your Orders
                 </Link>
               </li>
               <li>
-                <Link href="/help" style={linkStyle}>
+                <Link href="/help" style={{linkStyle}}>
                   Help
                 </Link>
               </li>
