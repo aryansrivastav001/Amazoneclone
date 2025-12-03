@@ -82,7 +82,6 @@ const Footer = () => {
               </li>
             </ul>
           </Col>
-
           <Col md={3} sm={6} xs={12} className="mb-4">
             <h5>Hii I am Aryan</h5>
           </Col>
