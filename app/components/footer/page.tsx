@@ -1,5 +1,4 @@
 "use client";
-
 import { Container, Row, Col } from "react-bootstrap";
 import Link from "next/link";
 
@@ -40,7 +39,6 @@ const Footer = () => {
               </li>
             </ul>
           </Col>
-
           <Col md={3} sm={6} xs={12} className="mb-4">
             <h5>Make Money with Us</h5>
             <ul className="list-unstyled">
@@ -61,7 +59,6 @@ const Footer = () => {
               </li>
             </ul>
           </Col>
-
           <Col md={3} sm={6} xs={12} className="mb-4">
             <h5>Let Us Help You</h5>
             <ul className="list-unstyled">
