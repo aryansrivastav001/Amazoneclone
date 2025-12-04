@@ -88,4 +88,6 @@ const Footer = () => {
         </Row>
       </Container>
     </footer>
-    );};export default Footer
+    );
+};
+export default Footer
