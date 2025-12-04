@@ -1,93 +1,75 @@
 "use client";
+
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Link from "next/link";
+
 const Footer = () => {
-  const linkStyle = {
-    color: "white",
-    textDecoration: "none",
-  };
-  const hoverStyle = {
-    textDecoration: "underline",
-  };
   return (
     <footer
-      style={{ backgroundColor: "#232f3e", color: "white" }}
-      className="pt-5 pb-4"
+      style={{
+        backgroundColor: "#232F3E",
+        color: "white",
+        padding: "40px 0",
+        marginTop: "40px",
+      }}
     >
       <Container>
         <Row>
-          <Col md={3} sm={6} xs={12} className="mb-4">
-            <h5>Get to Know Us</h5>
-            <ul className="list-unstyled">
-              <li>
-                <Link href="/about" style={{linkStyle}}>
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link href="/careers" style={{linkStyle}}>
-                  Careers
-                </Link>
-              </li>
-              <li>
-                <Link href="/press" style={{linkStyle}}>
-                  Press Releases
-                </Link>
-              </li>
+          {/* Get to Know Us */}
+          <Col md={3} sm={6} xs={12}>
+            <h5 style={{ marginBottom: "20px" }}>Get to Know Us</h5>
+            <ul style={{ listStyle: "none", paddingLeft: 0, lineHeight: "30px" }}>
+              <li>About Us</li>
+              <li>Careers</li>
+              <li>Press Releases</li>
+              <li>Amazon Science</li>
             </ul>
           </Col>
-          <Col md={3} sm={6} xs={12} className="mb-4">
-            <h5>Make Money with Us</h5>
-            <ul className="list-unstyled">
-              <li>
-                <Link href="/sell" style={{linkStyle}}>
-                  Sell on FlipCart
-                </Link>
-              </li>
-              <li>
-                <Link href="/affiliate" style={{linkStyle}}>
-                  Become an Affiliate
-                </Link>
-              </li>
-              <li>
-                <Link href="/advertise" style={{linkStyle}}>
-                  Advertise Your Products
-                </Link>
-              </li>
+
+          {/* Connect with Us */}
+          <Col md={3} sm={6} xs={12}>
+            <h5 style={{ marginBottom: "20px" }}>Connect with Us</h5>
+            <ul style={{ listStyle: "none", paddingLeft: 0, lineHeight: "30px" }}>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>LinkedIn</li>
             </ul>
           </Col>
-          <Col md={3} sm={6} xs={12} className="mb-4">
-            <h5>Let Us Help You</h5>
-            <ul className="list-unstyled">
-              <li>
-                <Link href="/account" style={{linkStyle}}>
-                  Your Account
-                </Link>
-              </li>
-              <li>
-                <Link href="/orders" style={{linkStyle}}>
-                  Your Orders
-                </Link>
-              </li>
-              <li>
-                <Link href="/help" style={{linkStyle}}>
-                  Help
-                </Link>
-              </li>
+
+          {/* Make Money With Us */}
+          <Col md={3} sm={6} xs={12}>
+            <h5 style={{ marginBottom: "20px" }}>Make Money with Us</h5>
+            <ul style={{ listStyle: "none", paddingLeft: 0, lineHeight: "30px" }}>
+              <li>Sell on Amazon</li>
+              <li>Affiliate Marketing</li>
+              <li>Advertise Your Products</li>
+              <li>Fulfilment by Amazon</li>
             </ul>
           </Col>
-          <Col md={3} sm={6} xs={12} className="mb-4">
-            <h5>Hii I am Aryan</h5>
+
+          {/* Help */}
+          <Col md={3} sm={6} xs={12}>
+            <h5 style={{ marginBottom: "20px" }}>Let Us Help You</h5>
+            <ul style={{ listStyle: "none", paddingLeft: 0, lineHeight: "30px" }}>
+              <li>Your Account</li>
+              <li>Returns</li>
+              <li>Customer Service</li>
+              <li>Help</li>
+            </ul>
           </Col>
         </Row>
-        <hr style={{ borderColor: "white" }} />
-        <Row className="text-center mt-3">
-          <Col>
-            <p>&copy; {new Date().getFullYear()} Aryan Srivastav. All Rights Reserved.</p>
-          </Col>
-        </Row>
+
+        <hr style={{ margin: "30px 0", borderColor: "rgba(255,255,255,0.2)" }} />
+
+        {/* Copyright */}
+        <p className="text-center" style={{ marginTop: "15px" }}>
+          © {new Date().getFullYear()} Copyright <b>Aryan Srivastav</b>
+        </p>
       </Container>
     </footer>
-);
+  );
 };
-export default Footer
+
+export default Footer;
+
